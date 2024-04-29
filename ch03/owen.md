@@ -87,13 +87,13 @@ HTTP/<Maijor>.<Minor>
 
 요청의 시작줄은 메서드로 시작하며, 서버에게 무엇을 해야 하는지 말해준다. 다만 모든 서버가 모든 메소드를 구현하고 있지는 않다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c77a2c20-9831-4c8a-9134-2d59b9750ec2/7c2f5ebb-f7c9-4203-b5a6-e41d69cc616b/Untitled.png)
+![image](https://github.com/Zero-ToHero/202404-http-perfect-guide/assets/71249347/e32937c0-b069-4734-a031-0ede4b8c48a9)
 
 ### 상태코드
 
 메서드가 서버에게 무엇을 해야 하는지 말해주는 것처럼, 상태 코드는 클라이언트에게 무엇이 일어났는지 말해준다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c77a2c20-9831-4c8a-9134-2d59b9750ec2/a5cca722-71ce-470b-b712-1afa2111c639/Untitled.png)
+![image](https://github.com/Zero-ToHero/202404-http-perfect-guide/assets/71249347/db8fb965-bc15-42e6-8563-a3e51c631c11)
 
 ### 사유구절
 
@@ -213,7 +213,7 @@ Expect 헤더를 보낸 클라이언트는 100 Continue응답을 기다리지 �
 
 클라이언트가 요청을 보내면, 그 요청은 대개 성공하며, 서버는 대응하는 성공을 의미하는 상태 코드의 배열을 갖고 있다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c77a2c20-9831-4c8a-9134-2d59b9750ec2/99e233cb-d7de-4fac-bd5c-5a58316f3f5d/Untitled.png)
+![image](https://github.com/Zero-ToHero/202404-http-perfect-guide/assets/71249347/0833da03-a97e-4d63-b170-e38187091fa7)
 
 ### 300-399 리다이렉션 상태코드
 
@@ -223,7 +223,7 @@ Expect 헤더를 보낸 클라이언트는 100 Continue응답을 기다리지 �
 
 일반적으로, HEAD가 아닌 요청에 대해 리다이렉션 상태 코드를 포함한 응답을 할 때, 리다이렉트될 URL에 대한 링크와 설명을 포함시키는 것은 좋은 습관이다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c77a2c20-9831-4c8a-9134-2d59b9750ec2/333908ea-a42d-40e7-95e4-af12dca193e0/Untitled.png)
+![image](https://github.com/Zero-ToHero/202404-http-perfect-guide/assets/71249347/fd59a0c9-b4a4-4382-a4de-308d8597b447)
 
 ### 400 - 499 클라이언트 에러 상태 코드
 
