@@ -48,7 +48,7 @@ HTTP는 TCP 바로 위에 있는 계층이기 때문에 HTTP 트랜잭션의 성
 
 어떤 데이터를 전송하든 새로운 TCP 커넥션을 열 때면, TCP 소프트웨어는 커넥션을 맺기 위한 조건을 맞추기 위해 연속으로 IP 패킷을 교환한다. 이런 패킷 교환은 HTTP 성능을 크게 저하시킬 수 있다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c77a2c20-9831-4c8a-9134-2d59b9750ec2/7d30ef3c-b0e2-4c3b-b7f4-80286cf79e04/Untitled.png)
+![image](https://github.com/Zero-ToHero/202404-http-perfect-guide/assets/71249347/2aa9253a-46b0-4ea6-8f96-60f8e302e736)
 
 이러한 TCP 핸드셰이크는 크기가 작은 HTTP 트랜잭션의 경우 50% 이상의 시간을 TCP를 구성하는 데 쓴다.
 
@@ -201,7 +201,7 @@ HTTP/1.1에서는 설계가 더 개선된 `지속 커넥션` 을 지원한다.
 
 지속 커넥션을 통해 요청을 파이프라이닝 할 수 있으며, 이는 keep-alive 커넥션의 성능을 높여준다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c77a2c20-9831-4c8a-9134-2d59b9750ec2/57f60f54-4493-4bb9-8452-e7218fbc48de/Untitled.png)
+![image](https://github.com/Zero-ToHero/202404-http-perfect-guide/assets/71249347/083a10ee-f3eb-4ae7-aadd-809055e856ea)
 
 - HTTP 클라이언트는 커넥션이 지속 커넥션인지 확인하기 전까지는 파이프라인을 이어서는 안된다.
 - HTTP 응답은 요청 순서와 같게 와야한다.
