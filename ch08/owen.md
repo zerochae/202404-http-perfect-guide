@@ -8,7 +8,7 @@
 
 이런 CGI의 동작방식은 **클라이언트의 요청이 있을 때 마다 독립적인 프로세스를 생성 한다는 특이점**이 있다. 이는 다르게 말하면 하나의 요청에 대해 하나의 자바 프로세스가 동작하는 것이며, 결국 이는 요청이 많아질수록 시스템에 부하가 발생하는 `성능적 비용`이 발생한다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c77a2c20-9831-4c8a-9134-2d59b9750ec2/665f9d4c-d514-409d-90e9-99682ca7cc56/Untitled.png)
+![image](https://github.com/Zero-ToHero/202404-http-perfect-guide/assets/71249347/90ec57a3-c438-4763-af0d-8106652cbd51)
 
 ## 대안
 
@@ -23,12 +23,12 @@ WSGI는 웹서버와 파이썬으로 작성된 웹 응용 프로그램 간의 �
 
 </aside>
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c77a2c20-9831-4c8a-9134-2d59b9750ec2/dde9438a-651b-4a69-a6b8-92fda2cedba0/Untitled.png)
+![image](https://github.com/Zero-ToHero/202404-http-perfect-guide/assets/71249347/4401b5da-6602-4d01-b90f-103722e223ba)
 
 이후 애플리케이션을 별도의 데몬으로 처리하는 방식이 발전함에 따라 애플리케이션 전용 데몬인 웹 애플리케이션 서버 방식으로 발전했다.(**WAS 방식)
 
 JAVA**에선 Servlet이 등장하였으며, 웹 서버와 같은 프로세스 속에서 콘텐츠를 생성하는 프로그램이 작동하기 때문에 CGI처럼 새로운 프로세스를 매번 실행할 필요가없어서, 비교적 빠른 속도를 갖춤.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c77a2c20-9831-4c8a-9134-2d59b9750ec2/bba3e91b-be48-4468-acd3-9cffc94c7030/Untitled.png)
+![image](https://github.com/Zero-ToHero/202404-http-perfect-guide/assets/71249347/c9087bb9-3e50-451a-b649-d9af55108696)
 
 기본적으로 `Servlet` 은 `CGI` 와 기술 체계가 매우 유사하다. `CGI` 가 기존 요청에 대해 프로그램을 실행하는 방식이라면, `Servlet` 는 요청별로 새로운 `Servlet` 을 실행하는 방식이다. 단, `Servlet` 은 컨테이너를 통해 개별적으로 `Servlet` 의 생명주기를 관리한다는 점이 다르다.
