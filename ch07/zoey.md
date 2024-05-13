@@ -2,8 +2,7 @@
 
 캐시의 유효기간 
 
-![image](https://github.com/heeom/202404-http-perfect-guide/assets/64389364/3501f1fa-97ac-4bf7-a3fb-7211a126cfce)
-
+<img width="415" alt="image" src="https://github.com/heeom/202404-http-perfect-guide/assets/64389364/1a0355fa-329d-4ea0-ab83-f6a251333813">
 
 - Cache-Control 헤더의 max-age값
     - `max-age=<seconds>`
