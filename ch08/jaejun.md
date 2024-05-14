@@ -1,0 +1,24 @@
+- HTTPS
+    - 컴퓨터 네트워크를 통한 보안 통신에 사용되며 인터넷에서 널리 사용된다.
+    - HTTPS에서 통신 프로토콜은 TLS(Transport Layer Security) 또는 이전에는 SSL(Secure Sockets Layer)을 사용하여 암호화된다
+    - HTTPS 프로토콜을 사용하기 위해서는 인증기관(CA)으로 부터 SSL 인증서를 발급받아야 한다.
+- 인증서 발급 과정 및 원리
+    - (서버) 서버의 공개키(public key)와 비밀키(private key)를 생성한다.
+    - 인증서 발급을 위해 CA에 정보제공
+    - CA에서 SSL 인증서 발급
+    - 인증서를 암호화하기 위해, CA의 공개키(public key)와 비밀키(private key)를 생성한다. CA의 비밀키를 이용해 SSL 인증서를 암호화한다.
+    - 암호화한 SSL 인증서를 다시 서버에 전달한다
+- SSL Handshake
+    - client → server 연결을 시도한다 (Client Hello)
+    - server → client 응답 (Server Hello)
+    - server → client (Certificate,  Server Key Exchange,  Server Hello Done) 패킷 전송
+        - Server Key Exchange 위에서 전달한 Certificate 내의 SSL 인증서에 서버의 공개키(public key)가 없는 경우, 서버가 직접 전달함을 의미한다
+        - server 가 행동을 마쳤다는 의미로 Server Hello Done 까지 보낸다.
+    - client 에서 server 의 SSL 인증서 검증
+        - public key 로 인증서 검증
+    - client → server 대칭키(비밀키) 전달 (Client Key Exchange, Change Ciper Spec)
+        - 클라이언트는 이 대칭키(비밀키)를 서버만 볼 수 있게 하기 위해, 서버의 공개키로 암호화를 해서 서버한테 전달한다
+    - Server / Client SSL Handshake Finished
+        - 서버와 클라이언트 모두 동일한 대칭키(비밀키)를 갖고 있으니, 통신할 준비 완료
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/9bf36ad3-0719-431a-b1e2-3f429aeb690d/ea5076e3-8d66-46a2-a99a-a78e2b7df243/Untitled.png)
