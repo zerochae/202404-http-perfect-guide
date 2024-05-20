@@ -1,3 +1,4 @@
+# 웹 로봇
 ![image](https://github.com/Eom-Ti/data-structures/assets/71249347/54c27cf0-46cc-4cfc-b74c-ad8aa2c53137)
 
 1. 시작 URL들을 미수집 URL 저장소에 저장
